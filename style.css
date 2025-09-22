@@ -6,7 +6,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin-top: 100px;
-  overflow: hidden;
+  overflow: auto;
 
   /* Background image */
   background: url('https://i.pinimg.com/736x/7d/93/6a/7d936a131dcc0c000ba61224f5b77bd4.jpg') no-repeat center center fixed;
@@ -98,4 +98,24 @@ button:hover {
 #surat.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  #surat {
+    max-width: 90%;       /* biar ga kepenuhan layar */
+    padding: 20px;        /* lebih kecil padding di HP */
+    font-size: 16px;      /* kecilin font biar enak dibaca */
+    line-height: 1.6;     /* rapih */
+  }
+
+  #surat img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
 }
